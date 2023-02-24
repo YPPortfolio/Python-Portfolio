@@ -3,8 +3,8 @@ from datetime import datetime
 import smtplib
 import time
 
-MY_LAT = 49.243252 # Your latitude
-MY_LONG = -122.974190 # Your longitude
+MY_LAT = LAT # Your latitude
+MY_LONG = -LONG # Your longitude
 
 def is_iss_overhead():
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
@@ -50,8 +50,8 @@ def is_night():
 while True:
     time.sleep(60)
     if is_iss_overhead() and is_night():
-        my_email = "peacenlov32@gmail.com"
-        password = "atyflgvppcjsahyh"
+        my_email = "EMAIL"
+        password = "PASS"
 
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
             connection.starttls()
