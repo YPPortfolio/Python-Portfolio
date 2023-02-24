@@ -74,8 +74,8 @@ if today_tuple in birthdays_dict:
         updated_letter = letter.replace("[NAME]", birthday_person["name"])
 
 #--- Send Letter as Email ---#
-my_email = "peacenlov32@gmail.com"
-password = "atyflgvppcjsahyh"
+my_email = "INSERT EMAIL STRING"
+password = "INSERT PASS STRING"
 
 today_birthday_email = birthday_person["email"]
 
