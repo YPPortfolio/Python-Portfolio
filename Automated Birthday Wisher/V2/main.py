@@ -24,8 +24,8 @@ with open("birthdays.csv", "r") as birthdays_file:
 
     new_birthdays = pd.DataFrame(
         {"name": ["Jason", "Carmen", "Thomas", "Jimmy", "Shawn"],
-         "email": ["peacenlov32@gmail.com", "peacenlov32@gmail.com", "peacenlov32@gmail.com",
-                   "peacenlov32@gmail.com", "peacenlov32@gmail.com"],
+         "email": ["EMAIL", "EMAIL", "EMAIL",
+                   "EMAIL", "EMAIL"],
          "year": ["1961", "1961", "1961", "1961", "1961"],
          "month": ["2", "2", "2", "2", "2"],
          "day": ["9", "11", "15", "13", "14"],
