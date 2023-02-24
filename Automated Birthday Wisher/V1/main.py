@@ -24,8 +24,8 @@ with open("birthdays.csv", "r") as birthdays_file:
 
     new_birthdays = pd.DataFrame(
         {"name": ["Jason", "Carmen", "Thomas", "Jimmy", "Shawn"],
-         "email": ["peacenlov32@gmail.com", "peacenlov32@gmail.com", "peacenlov32@gmail.com",
-                   "peacenlov32@gmail.com", "peacenlov32@gmail.com"],
+         "email": ["EMAIL", "EMAIL", "EMAIL",
+                   "EMAIL", "EMAIL"],
          "year": ["1961", "1961", "1961", "1961", "1961"],
          "month": ["2", "2", "2", "2", "2"],
          "day": ["9", "11", "15", "13", "14"],
@@ -62,8 +62,8 @@ with open(f"./letter_templates/letter_{random.randint(1,3)}.txt") as letter_file
 
 
 #--- Send Letter as Email ---#
-my_email = "peacenlov32@gmail.com"
-password = "atyflgvppcjsahyh"
+my_email = "EMAIL"
+password = "PASS"
 
 today_birthday_email = today_birthday["email"][0]
 
