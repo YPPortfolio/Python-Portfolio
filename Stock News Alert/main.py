@@ -3,7 +3,7 @@ import smtplib
 
 def get_news():
     NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-    NEWS_API = "e311407066a54d1c9b318a412a0a1c11"
+    NEWS_API = "API KEY"
     NEWS_PARAMS = {
         "apiKey": NEWS_API,
         "q": f"{COMPANY_NAME} or Exxon OR XOM",
@@ -21,8 +21,8 @@ def get_news():
     return [(news["title"], news["description"]) for news in news_list]
 
 def send_email_notification():
-    my_email = "peacenlov32@gmail.com"
-    password = "atyflgvppcjsahyh"
+    my_email = "EMAIL"
+    password = "PASS"
 
     for news in news_list:
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
@@ -53,7 +53,7 @@ CLOSE_KEY = "4. close"
 SERIES = "Time Series (30min)"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
-STOCK_API_KEY = "ZA3PAQDAY4J1IDQ8"
+STOCK_API_KEY = "API KEY"
 STOCK_PARAMS = {
     "function": "TIME_SERIES_INTRADAY",
     "symbol": STOCK,
